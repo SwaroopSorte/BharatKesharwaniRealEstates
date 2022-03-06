@@ -12,7 +12,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'SECRET_KEY_PLACEHOLDER'
+SECRET_KEY = 'django-insecure-m$@0(y+ob=d32psixyr8gnih9_yqxpnd1as$rq@vi1tb&@iz=$'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
@@ -131,7 +131,7 @@ LOGGING = {
 }
 
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [*]
 
 
 # Application definition
@@ -311,7 +311,5 @@ try:
 except ImportError:
     pass
 
-
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 # Activate Django-Heroku.
 django_heroku.settings(locals())
